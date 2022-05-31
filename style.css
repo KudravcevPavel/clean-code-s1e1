@@ -21,9 +21,11 @@
 }
 
 @media (max-width:768px) {
+
   .header {
     text-align: center;
   }
+
 }
 
 .main {
@@ -115,28 +117,27 @@ li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-li>* {
+.list__item>* {
   vertical-align: middle;
 }
 
-li>input[type="checkbox"] {
+.list__item>.input__checkbox {
   margin: 0 10px;
 }
 
-li>label {
+.list__item>label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li>input[type="text"] {
+.list__item>.input__text {
   width: 226px
 }
 
