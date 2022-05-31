@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -106,7 +106,7 @@ label[for="new-task"] {
   margin: 0 0 20px;
 }
 
-input#new-task {
+#new-task {
   width: 318px;
 }
 
@@ -140,31 +140,32 @@ li>input[type="text"] {
   width: 226px
 }
 
-button.delete img {
+.remove__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.remove__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
-  text-decoration: line-through color: #888;
+#completed__label {
+  text-decoration: line-through;
+  color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.input__text {
   display: none
 }
 
-ul li.edit-mode input[type=text] {
+#edit__input {
   display: inline-block;
   width: 224px
 }
 
-ul li.edit-mode label {
+#edit__label {
   display: none;
 }
